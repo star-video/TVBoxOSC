@@ -79,7 +79,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://刚刚.live/%E7%8C%AB");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitea.com/ichenczh/tvbox/raw/branch/main/tvbox1.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
